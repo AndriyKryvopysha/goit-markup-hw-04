@@ -96,6 +96,7 @@ ul {
 }
 
 .nav-contact {
+  display: flex;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -106,6 +107,18 @@ ul {
 .nav-contact:hover,
 .nav-contact:focus {
   color: #2196f3;
+}
+
+.icon-auth {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-auth:hover,
+.icon-auth:focus {
+  fill: #2196f3;
 }
 
 .auth-contact {
@@ -120,7 +133,16 @@ ul {
 
 /* Герой */
 .hero {
-  background-color: #2f303a;
+  outline: 1px solid #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -217,6 +239,12 @@ ul {
   outline: 1px solid #eeeeee;
 }
 
+.projects-container:hover,
+.projects-container:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-container:nth-child(3n) {
   margin-right: 0;
 }
@@ -259,11 +287,41 @@ ul {
   justify-content: center;
 }
 
+.advantage-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  padding-right: 0;
+}
+
+.icon-sat::before {
+  background-image: url(../images/SVG/sat-plate.svg);
+  background-size: 66px 70px;
+}
+
+.icon-clock::before {
+  background-image: url(../images/SVG/time.svg);
+  background-size: 68px 70px;
+}
+
+.icon-comp::before {
+  background-image: url(../images/SVG/comp.svg);
+  background-size: 70px 54px;
+}
+
+.icon-cosmo::before {
+  background-image: url(../images/SVG/cosmo.svg);
+  background-size: 70px 70px;
+}
+
 .advantage-item {
   display: block;
   text-align: left;
   width: 270px;
-  padding-right: 40px;
+  padding-right: 0px;
 }
 
 .advantage-item + .advantage-item {
@@ -272,16 +330,17 @@ ul {
 }
 
 .advantages-title {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.advantages p {
+.advantages-text {
   line-height: 1.71;
   color: #757575;
   margin-left: 0px;
   margin-right: 0px;
+  padding-right: 15px;
 }
 
 /* Примеры */
@@ -336,10 +395,12 @@ ul {
   display: flex;
   flex-direction: column;
   flex-basis: 270px;
-  border-radius: 4px;
   text-align: center;
   margin-right: 30px;
   padding-bottom: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-card:last-child {
@@ -348,7 +409,7 @@ ul {
 
 .card-discription {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .name {
@@ -379,6 +440,166 @@ ul {
   margin-right: 0px;
 }
 
+.member-links {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+/* ==Social Icons== */
+
+.team-links-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.link-social:hover,
+.link-social:focus {
+  background-color: #2196f3;
+}
+
+.first {
+  margin-left: 0px;
+}
+
+.icon-inst {
+  object-position: center;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.icon-inst:hover {
+  fill: #ffffff;
+}
+
+.icon-twit {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.icon-twit:hover {
+  fill: #ffffff;
+}
+
+.icon-face {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.icon-face:hover {
+  fill: #ffffff;
+}
+
+.icon-in {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.icon-in:hover {
+  fill: #ffffff;
+}
+/* ===Clients Icons== */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  margin-left: 30px;
+  border: 1px #afb1b8 solid;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: #2196f3;
+}
+
+.icon-yaco {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.icon-yaco:hover {
+  fill: #2196f3;
+}
+
+.icon-tagline {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.icon-tagline:hover {
+  fill: #2196f3;
+}
+
+.icon-company3 {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.icon-company3:hover {
+  fill: #2196f3;
+}
+
+.icon-foster {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.icon-foster:hover {
+  fill: #2196f3;
+}
+
+.icon-brand {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.icon-brand:hover {
+  fill: #2196f3;
+}
+
+.icon-company6 {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.icon-company6:hover {
+  fill: #2196f3;
+}
+
 /* Подвал */
 
 footer {
@@ -389,7 +610,7 @@ footer {
 
 .container-foot {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: 1200px;
   margin-left: auto;
@@ -400,6 +621,7 @@ footer {
 
 .logo-psn {
   display: block;
+  margin-right: 70px;
 }
 
 .logo-f {
@@ -448,4 +670,46 @@ footer {
 .foot-contact:hover,
 .foot-contact:focus {
   color: #2196f3;
+}
+
+/*  ======Footer social links==== */
+
+.foot-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.foot-links-titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.foot-links-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.link-social-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-social-foot:focus,
+.link-social-foot:hover {
+  background-color: #2196f3;
+}
+
+.first {
+  margin-left: 0px;
 }
