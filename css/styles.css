@@ -110,8 +110,6 @@ ul {
 }
 
 .icon-auth {
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
@@ -298,22 +296,22 @@ ul {
 }
 
 .icon-sat::before {
-  background-image: url(../images/SVG/sat-plate.svg);
+  background-image: url(../images/svg/sat-plate.svg);
   background-size: 66px 70px;
 }
 
 .icon-clock::before {
-  background-image: url(../images/SVG/time.svg);
+  background-image: url(../images/svg/time.svg);
   background-size: 68px 70px;
 }
 
 .icon-comp::before {
-  background-image: url(../images/SVG/comp.svg);
+  background-image: url(../images/svg/comp.svg);
   background-size: 70px 54px;
 }
 
 .icon-cosmo::before {
-  background-image: url(../images/SVG/cosmo.svg);
+  background-image: url(../images/svg/cosmo.svg);
   background-size: 70px 70px;
 }
 
