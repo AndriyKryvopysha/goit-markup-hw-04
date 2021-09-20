@@ -107,16 +107,12 @@ ul {
 .nav-contact:hover,
 .nav-contact:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
 
 .icon-auth {
   margin-right: 10px;
-  fill: #757575;
-}
-
-.icon-auth:hover,
-.icon-auth:focus {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .auth-contact {
@@ -461,11 +457,13 @@ ul {
   width: 44px;
   margin-left: 10px;
   border-radius: 50%;
+  color: #afb1b8;
 }
 
 .link-social:hover,
 .link-social:focus {
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .first {
@@ -476,40 +474,27 @@ ul {
   object-position: center;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-}
-
-.icon-inst:hover {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .icon-twit {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-}
-
-.icon-twit:hover {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .icon-face {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-}
-.icon-face:hover {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .icon-in {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.icon-in:hover {
-  fill: #ffffff;
-}
+
 /* ===Clients Icons== */
 
 .clients {
@@ -535,67 +520,49 @@ ul {
   margin-left: 30px;
   border: 1px #afb1b8 solid;
   border-radius: 4px;
+  color: #afb1b8;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: #2196f3;
+  color: #2196f3;
 }
 
 .icon-yaco {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-
-.icon-yaco:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .icon-tagline {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-
-.icon-tagline:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .icon-company3 {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-.icon-company3:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .icon-foster {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-.icon-foster:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .icon-brand {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-.icon-brand:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .icon-company6 {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
-}
-.icon-company6:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 /* Подвал */
